@@ -25,7 +25,7 @@ const server:net.Server = net.createServer((socket:net.Socket)=>{
     
     //tudo que está cheagando
     socket.on('data',(mensagem:Buffer)=>{
-       
+      
     })
     
     //fecha conexão com cliente
