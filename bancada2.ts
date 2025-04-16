@@ -25,7 +25,8 @@ const server:net.Server = net.createServer((socket:net.Socket)=>{
     
     //tudo que está cheagando
     socket.on('data',(mensagem:Buffer)=>{
-        console.log(JSON.parse(mensagem.toString('utf-8')))
+        const msgStr = mensagem.toString('utf-8');
+        
     })
     
     //fecha conexão com cliente
